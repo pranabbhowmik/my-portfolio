@@ -4,7 +4,7 @@ const Education = ({ mode }) => {
   return (
     <section
       id="education"
-      className={`flex flex-col gap-8 items-center md:justify-evenly min-h-lvh md:px-8 scroll-smooth md:-mt-20 ${
+      className={`flex flex-col gap-8 items-center md:justify-evenly min-h-lvh md:px-8 scroll-smooth md:-mt-20 -mt-10 ${
         mode === "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >
@@ -16,9 +16,7 @@ const Education = ({ mode }) => {
           <time className="mb-1 text-sm font-robotoMono leading-none ">
             Bengal Institute of Technology and Management 2021 - 2025
           </time>
-          <h3 className="text-lg font-semibold">
-            Btech in CSE
-          </h3>
+          <h3 className="text-lg font-semibold">Btech in CSE</h3>
           <p className="mb-4 text-base font-normal">
             During my college years, I developed strong technical skills, built
             lifelong friendships, and countless learning opportunities that
@@ -30,9 +28,12 @@ const Education = ({ mode }) => {
           <time className="mb-1 text-sm font-robotoMono leading-none">
             Simulia C.K Vidyapith (H.S) 2013 - 2021
           </time>
-         <br></br><br></br>
+          <br></br>
+          <br></br>
           <p className="text-base font-normal ">
-          During my school days, I loved playing cricket with friends, while singing was a cherished hobby. Both activities helped me relax and stay focused, creating many memorable moments.
+            During my school days, I loved playing cricket with friends, while
+            singing was a cherished hobby. Both activities helped me relax and
+            stay focused, creating many memorable moments.
           </p>
         </li>
       </ol>

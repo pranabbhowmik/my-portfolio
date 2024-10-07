@@ -39,7 +39,7 @@ const Contact = ({ mode }) => {
   return (
     <section
       id="contact"
-      className={`flex -mt-20 md:-mt-20 flex-col items-center text-center p-8 min-h-screen ${
+      className={`flex -mt-40 md:-mt-20 flex-col items-center text-center p-8 min-h-screen ${
         mode === "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >

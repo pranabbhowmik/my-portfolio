@@ -11,7 +11,8 @@ import tweeterdark from "../../assets/twitter-dark.png";
 import linkedindark from "../../assets/linkedin-dark.png";
 import githubdark from "../../assets/github-dark.jpg";
 import CV from "../../assets/Pranab-resume.pdf";
-const Hero = ({ mode, handelmode }) => {  // Make sure it's 'handleMode' here as well
+const Hero = ({ mode, handelmode }) => {
+  // Make sure it's 'handleMode' here as well
   return (
     <section
       id="hero"
@@ -20,10 +21,10 @@ const Hero = ({ mode, handelmode }) => {  // Make sure it's 'handleMode' here as
       }`}
     >
       {/* Profile Image and Sun Icon */}
-      <div className="relative md:mt-20 mt-6 lg:order-2 lg:mr-10 lg:flex lg:justify-end">
+      <div className="relative md:mt-20 mt-6 lg:order-2 lg:mr-10 lg:flex lg:justify-end ">
         <img
           src={pranab}
-          alt="Pranab Bhowmik"
+          alt="Pranab Bhowmik || Full-Stack Developer"
           className="w-64 sm:w-96 rounded-full object-cover border-1 border-white"
         />
         {/* Dark/Light Mode Toggle */}
@@ -51,14 +52,14 @@ const Hero = ({ mode, handelmode }) => {  // Make sure it's 'handleMode' here as
           >
             <img
               src={mode === "light" ? hackerlight : hackerdark}
-              alt="HackerRank icon"
+              alt="Pranab Bhowmik || Full-Stack Developer"
               className="w-7 h-7 md:w-8 md:h-8"
             />
           </a>
           <a href="https://x.com/home" target="_blank">
             <img
               src={mode === "light" ? tweeterlight : tweeterdark}
-              alt="Twitter icon"
+              alt="Pranab Bhowmik || Full-Stack Developer"
               className="w-7 h-7 md:w-8 md:h-8"
             />
           </a>
@@ -68,14 +69,14 @@ const Hero = ({ mode, handelmode }) => {  // Make sure it's 'handleMode' here as
           >
             <img
               src={mode === "light" ? linkedinlight : linkedindark}
-              alt="Linkedin icon"
+              alt="Pranab Bhowmik || Full-Stack Developer"
               className="w-8 h-8 md:w-9 md:h-9"
             />
           </a>
           <a href="https://github.com/pranabbhowmik" target="_blank">
             <img
               src={mode === "light" ? githublight : githubdark}
-              alt="Github icon"
+              alt="Pranab Bhowmik || Full-Stack Developer"
               className="w-7 h-7 md:w-8 md:h-8 rounded-md"
             />
           </a>
@@ -102,12 +103,10 @@ const Hero = ({ mode, handelmode }) => {  // Make sure it's 'handleMode' here as
           </button>
         </a>
       </div>
-      <br></br><br></br>
+      <br></br>
+      <br></br>
     </section>
   );
 };
 
 export default Hero;
-
-
-

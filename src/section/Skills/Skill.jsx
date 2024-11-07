@@ -13,6 +13,8 @@ import tailwind from "../../assets/tailwindcss.png";
 import aws from "../../assets/aws.png";
 import Redux from "../../assets/redux..png";
 import Restfulapi from "../../assets/restfullapi.png";
+import zod from "../../assets/logo.png";
+import jwt from "../../assets/pic_logo.png";
 // Similarly, add paths for other images.
 
 const Skill = ({ mode }) => {
@@ -27,6 +29,8 @@ const Skill = ({ mode }) => {
     { name: "Restful API", image: Restfulapi },
     { name: "MongoDB", image: mongodb },
     { name: "MySQL", image: mysql },
+    { name: "Zod", image: zod },
+    { name: "JWT", image: jwt },
     { name: "Tailwind Css", image: tailwind },
     { name: "AWS", image: aws },
     { name: "HTML", image: htmlImage },

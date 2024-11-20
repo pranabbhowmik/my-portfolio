@@ -1,39 +1,34 @@
 import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = ({ mode }) => {
-  const formRef = useRef(null);
+  const form = useRef();
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    formData.append("access_key", "9d9e5ca2-f789-40d3-a220-b03110712eeb");
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
+    emailjs
+      .sendForm("service_ibub44c", "template_glq6jph", form.current, {
+        publicKey: "ObnkQm06WHHN-hv5B",
+      })
+      .then(
+        () => {
+          toast.success("Message sent successfully!", {
+            position: "top-center",
+            autoClose: 3000,
+          });
+          form.current.reset(); // Reset the form fields
         },
-        body: json,
-      }).then((res) => res.json());
-
-      if (res.success) {
-        console.log("Success", res);
-        // Reset the form fields
-        if (formRef.current) {
-          formRef.current.reset();
+        (error) => {
+          toast.error("Failed to send message. Please try again.", {
+            position: "top-center",
+            autoClose: 3000,
+          });
+          console.error("FAILED...", error.text);
         }
-      } else {
-        console.error("Submission failed", res);
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
+      );
   };
 
   return (
@@ -44,10 +39,11 @@ const Contact = ({ mode }) => {
       }`}
     >
       <h1 className="text-5xl font-rubik mb-8">Contact</h1>
+
       <form
         className="flex flex-col gap-8 w-full max-w-sm sm:max-w-lg lg:max-w-2xl"
-        onSubmit={onSubmit}
-        ref={formRef}
+        onSubmit={sendEmail}
+        ref={form}
       >
         <div className="flex flex-col">
           <label htmlFor="name" className="sr-only">
@@ -55,7 +51,7 @@ const Contact = ({ mode }) => {
           </label>
           <input
             type="text"
-            name="name"
+            name="from_name"
             id="name"
             placeholder="Name"
             required
@@ -111,6 +107,9 @@ const Contact = ({ mode }) => {
           Submit
         </button>
       </form>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </section>
   );
 };

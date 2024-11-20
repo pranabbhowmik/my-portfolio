@@ -8,7 +8,9 @@ const Education = ({ mode }) => {
         mode === "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >
-      <h1 className="text-5xl font-rubik mb-8 text-center">Education</h1>
+      <h1 className="text-5xl font-rubik mb-8 mt-16 sm:mt-1 text-center">
+        Education
+      </h1>
 
       <ol className="relative border-l border-gray-600 dark:border-gray-400  max-w-xl md:-mt-40 mx-5">
         <li className="mb-10 ml-6">

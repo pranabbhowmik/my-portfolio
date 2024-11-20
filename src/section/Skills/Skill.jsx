@@ -44,7 +44,9 @@ const Skill = ({ mode }) => {
         mode === "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >
-      <h1 className="text-5xl font-rubik mb-8 text-center">Skills</h1>
+      <h1 className="text-5xl mt-0 sm:mt-16 font-rubik mb-8 text-center">
+        Skills
+      </h1>
 
       {/* Adjusting the grid for responsive layout */}
       <div className="grid grid-cols-3 gap-10 md:gap-20 sm:grid-cols-3 lg:grid-cols-5 md:-mt-20">

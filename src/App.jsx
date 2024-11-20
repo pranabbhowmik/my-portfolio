@@ -9,7 +9,7 @@ import Skill from "./section/Skills/Skill";
 
 const App = () => {
   // Move the mode state and handelmode function to the parent component
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
 
   const handelmode = () => {
     setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));

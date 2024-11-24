@@ -5,7 +5,7 @@ const Footer = ({ mode }) => {
   return (
     <footer
       id="footer"
-      className={`flex flex-col items-center  sm:mt-0 justify-center py-6 ${
+      className={`flex flex-col items-center -mt-12 sm:mt-0 justify-center py-6 ${
         mode === "light" ? "bg-gray-100 text-black" : "bg-black text-white"
       }`}
     >

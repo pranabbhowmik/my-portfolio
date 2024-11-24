@@ -15,6 +15,9 @@ import Redux from "../../assets/redux..png";
 import Restfulapi from "../../assets/restfullapi.png";
 import zod from "../../assets/logo.png";
 import jwt from "../../assets/pic_logo.png";
+import Reactrouter from "../../assets/router.png";
+import postman from "../../assets/postman.png";
+import tenstack from "../../assets//tenstack.png";
 // Similarly, add paths for other images.
 
 const Skill = ({ mode }) => {
@@ -35,6 +38,9 @@ const Skill = ({ mode }) => {
     { name: "AWS", image: aws },
     { name: "HTML", image: htmlImage },
     { name: "CSS", image: cssImage },
+    { name: "Postman", image: postman },
+    { name: "Tenstack", image: tenstack },
+    { name: "ReactRouter", image: Reactrouter },
   ];
 
   return (

@@ -3,7 +3,7 @@ import Projectcard from "../../Card/Projectcard";
 import goppo from "../../assets/goppo.png";
 import totowala from "../../assets/totowala.jpg";
 import Saregamapa from "../../assets/saregamapa.png";
-import note from "../../assets/note.jpg";
+import justcheers from "../../assets/justcheers.jpg";
 
 const Project = ({ mode }) => {
   return (
@@ -24,7 +24,7 @@ const Project = ({ mode }) => {
         />
         <Projectcard
           src={totowala}
-          link="https://toto-wala.vercel.app/"
+          link="https://totowala.netlify.app/"
           h3="Totowala"
           p="E-rickshaw booking"
         />
@@ -35,10 +35,10 @@ const Project = ({ mode }) => {
           p="Music App"
         />
         <Projectcard
-          src={note}
-          link="https://notebanao.netlify.app/"
-          h3="Note Banao"
-          p="Note App"
+          src={justcheers}
+          link="https://justcheers.netlify.app/"
+          h3="Just Cheers"
+          p="Alcohol Delivery App"
         />
       </div>
     </section>

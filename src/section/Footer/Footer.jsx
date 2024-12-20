@@ -22,17 +22,6 @@ const Footer = ({ mode }) => {
           </div>
         </div>
 
-        {/* Call Us */}
-        <div className="flex items-center gap-4">
-          <FaPhoneAlt className="text-blue-500 text-2xl sm:text-3xl" />
-          <div>
-            <h3 className="font-semibold font-robotoMono text-lg sm:text-xl">
-              Phone
-            </h3>
-            <p className="text-base sm:text-lg">+91 9749243525</p>
-          </div>
-        </div>
-
         {/* Mail Us */}
         <div className="flex items-center gap-4">
           <a href="mailto:bhowmikpranab37@gmail.com">

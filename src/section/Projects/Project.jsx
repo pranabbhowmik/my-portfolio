@@ -36,7 +36,7 @@ const Project = ({ mode }) => {
         />
         <Projectcard
           src={justcheers}
-          link="https://justcheers.netlify.app/"
+          link="https://just-cheers.onrender.com/"
           h3="Just Cheers"
           p="Alcohol Delivery App"
         />
